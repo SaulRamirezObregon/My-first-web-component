@@ -1,0 +1,19 @@
+{
+  "heroes":[
+    {
+    "id":"spiderman",
+    "universe":"marvel",
+    "identity":"peter parker"
+    },
+    {
+    "id":"batman",
+    "universe":"dc",
+    "identity":"bruce wayne"
+    },
+    {
+    "id":"goku",
+    "universe":"universo 7",
+    "identity":"son goku"
+    }
+  ]
+}
