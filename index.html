@@ -7,6 +7,7 @@
     <title>Web components</title>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
     <link rel="stylesheet" href="./components/css/style.css">
     <link rel="import" href="./components/sidebar-navigation/sidebar-navigation.html">
     <link rel="import" href="./components/show-content/show-content.html">
@@ -18,9 +19,14 @@
 <script>
    document.addEventListener('navigation-active', (event)=>{
       const objectHeroe = event.detail.heroe[0];
-      const showContent = document.querySelector('show-content');
-      /*JSON.stringify(), convierte en string*/
-      showContent.setAttribute("informacion-heroe",JSON.stringify(objectHeroe));
+      if(typeof objectHeroe != "undefined"){
+        const showContent = document.querySelector('show-content');
+        console.log();
+        /*JSON.stringify(), convierte en string*/
+
+        showContent.setAttribute("informacion-heroe",JSON.stringify(objectHeroe));
+      }
+
 
    });
 </script>

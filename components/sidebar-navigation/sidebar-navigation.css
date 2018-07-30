@@ -54,6 +54,12 @@ p:hover{
     }
 }
 
+@media only screen and (max-width: 650px) {
+    h1{
+      letter-spacing: 5px;
+    }
+}
+
 .edit_p{
   color: var(--parrafo-color, red);
 }
