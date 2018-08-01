@@ -3,7 +3,7 @@ function readJSONFrom(url){
     .then(response => response.json())
     .then(infoHeros);
 }
-
+//test
 function infoHeros(data){
   const objectHeros = data.map(heros=>{
     if(heros.hasOwnProperty("id")){
